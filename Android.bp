@@ -168,3 +168,40 @@ android_app_import {
     },
     privileged: true,
 }
+
+android_app_import {
+    name: "MiuiScanner",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/MiuiScanner/MiuiScanner.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
+    name: "MiuiGallery",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/MiuiGallery/MiuiGallery.apk",
+    certificate: "platform",
+    overrides: [
+        "Glimpse",
+        "Photos",
+    ],
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
+    name: "MiuiEditor",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/MiuiEditor/MiuiEditor.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
